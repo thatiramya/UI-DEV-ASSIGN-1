@@ -82,7 +82,51 @@ npm start
 
 ## 🗂️ Project Structure
 ```markdown
-
+Directory structure:
+└── UI-DEV-ASSIGN-1/
+    ├── README.md
+    ├── eslint.config.js
+    ├── index.html
+    ├── package.json
+    ├── postcss.config.js
+    ├── tailwind.config.js
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    ├── vite.config.ts
+    └── src/
+        ├── App.tsx
+        ├── index.css
+        ├── main.tsx
+        ├── vite-env.d.ts
+        ├── components/
+        │   ├── AddItemPanel.tsx
+        │   ├── CartPanel.tsx
+        │   ├── DragPreview.tsx
+        │   ├── HomePage.tsx
+        │   ├── ItemList.tsx
+        │   ├── NewOrder.tsx
+        │   ├── Chat/
+        │   │   ├── ChatBot.tsx
+        │   │   └── ChatWindow.tsx
+        │   ├── HomePage/
+        │   │   ├── OrderSearch.tsx
+        │   │   └── OrderSort.tsx
+        │   ├── OrderConfirmation/
+        │   │   └── OrderSuccess.tsx
+        │   └── OrderList/
+        │       ├── OrderCard.tsx
+        │       └── OrderDetails.tsx
+        ├── data/
+        │   ├── items.ts
+        │   └── mockOrders.ts
+        ├── store/
+        │   └── orderStore.ts
+        ├── types/
+        │   └── index.ts
+        └── utils/
+            ├── chatResponses.ts
+            └── orderUtils.ts
 ```
 
 ---
