@@ -38,7 +38,6 @@ The **Order Management Platform** is a versatile web application tailored to sim
 - **Drag-and-Drop Interface**: Intuitive design for user-friendly order management.
 - **Responsive Design**: Optimized for various devices and screen sizes.
 
-
 ---
 
 
@@ -83,16 +82,60 @@ npm start
 
 ## 🗂️ Project Structure
 ```markdown
-order-management-platform/
-├── public/                 # Static assets
-├── src/                    
-│   ├── components/         # Reusable components
-│   │   ├── common/         # Shared components like buttons, headers
-│   │   ├── orders/         # Order-specific components
-│   │   └── support/        # Support chat components
-│   ├── pages/              # Main application pages
-│   └── utils/              # Utility functions
-└── package.json            # Project metadata and dependencies
+└── ui-assignment-1/
+    ├── README.md                     # Documentation for the project
+    ├── eslint.config.js              # Configuration file for ESLint
+    ├── index.html                    # Main HTML file for the application
+    ├── package.json                  # Project metadata and dependencies
+    ├── postcss.config.js             # Configuration for PostCSS
+    ├── tailwind.config.js            # Tailwind CSS configuration file
+    ├── tsconfig.app.json             # TypeScript configuration for the application
+    ├── tsconfig.json                 # Base TypeScript configuration
+    ├── tsconfig.node.json            # TypeScript configuration for Node.js
+    ├── vite.config.ts                # Configuration file for Vite
+    └── src/                          # Source files for the application
+        ├── App.tsx                   # Main application component
+        ├── index.css                 # Global CSS styles
+        ├── main.tsx                  # Main entry point for the application
+        ├── vite-env.d.ts             # TypeScript environment definitions for Vite
+        ├── components/               # Reusable UI components
+        │   ├── Background.tsx        # Background component for layout styling
+        │   ├── CartItem.tsx          # Component for displaying items in the cart
+        │   ├── ChatSupport.tsx       # Chat support interface component
+        │   ├── DraggableItem.tsx     # Component for draggable items in the order form
+        │   ├── DroppableZone.tsx     # Component for drop zones in the order form
+        │   ├── EmptyCart.jsx         # Component displayed when the cart is empty
+        │   ├── OrderCard.tsx         # Card component to display order summary
+        │   ├── OrderDetails.tsx      # Component to display detailed order information
+        │   ├── OrderForm.tsx         # Form component for creating a new order
+        │   ├── OrderSummary.tsx      # Component to summarize the order before submission
+        │   └── chat/                 # Components related to chat functionality
+        │       ├── ChatHeader.tsx    # Header component for the chat window
+        │       ├── ChatInput.tsx     # Input field component for chat messages
+        │       ├── ChatMessages.tsx  # Component to display chat messages
+        │       └── ChatWindow.tsx    # Main chat window component
+        ├── data/                     # Static data used in the application
+        │   ├── categories.ts         # Categories data for items
+        │   └── items.ts              # Items data for the order form
+        ├── hooks/                    # Custom React hooks
+        │   └── useChatMessages.ts    # Hook to manage chat messages state
+        ├── lib/                      # Utility libraries and configurations
+        │   ├── theme.ts              # Theme configuration for the application
+        │   └── utils.ts              # General utility functions
+        ├── pages/                    # Page components
+        │   ├── Home.tsx              # Home page component
+        │   └── NewOrder.jsx          # New order creation page component
+        ├── store/                    # State management files
+        │   ├── cart.js               # State management for the cart
+        │   └── orders.js             # State management for orders
+        ├── types/                    # TypeScript type definitions
+        │   ├── index.ts              # Common type definitions
+        │   └── order.ts              # Type definitions related to orders
+        └── utils/                    # Utility functions
+            ├── chatbot.ts            # Utility functions for chatbot integration
+            ├── orderValidation.ts    # Functions to validate order inputs
+            └── validation.js         # General validation utilities
+
 ```
 
 ---
